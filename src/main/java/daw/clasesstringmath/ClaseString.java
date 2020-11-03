@@ -74,6 +74,28 @@ public class ClaseString {
         String sinEspacios = espacios.trim();
         System.out.println("Tamaño de sinEspacios: " + sinEspacios.length());
 
+        // Reemplazo de caracteres
+        System.out.println("String original: " + s2);
+        String str2 = s2.replace('a', 'x');
+        System.out.println("String reemplazado: " + str2);
+
+        // Contenido
+        String aBuscar = "dealbox";
+        System.out.println("¿Contiene " + s2 + " la subcadena "
+                + aBuscar + "? " + s2.contains(aBuscar));
+
+        // Métodos endsWith, startsWith, isEmpty
+        String vacio = "";
+        // isEmpty es true si length es 0
+        System.out.println("El string está vacío? " + vacio.isEmpty());
+
+        String ejemplo = "ejemplo";
+        // startsWith devuelve true si el string empieza con la secuencia de 
+        // caracteres que se pasa como parámetro
+        System.out.println("Empieza ejemplo con ej? " + ejemplo.startsWith("ej"));
+        // endsWith devuelve true si el string termina con la secuencia de 
+        // caracteres que se pasa como parámetro
+        System.out.println("Termina ejemplo con plo? " + ejemplo.endsWith("plo"));
     }
 
 }
