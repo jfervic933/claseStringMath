@@ -63,6 +63,17 @@ public class ClaseString {
         compareTo = "aes".compareTo(s1);
         System.out.println("Comparación de aes y s1: " + compareTo);
 
+        //Conversión mayúsculas y minúsculas
+        String mayusculas = s2.toUpperCase();
+        System.out.println("s2 en mayus: " + mayusculas);
+        System.out.println("String mayusculas en minusc: " + mayusculas.toLowerCase());
+
+        // Quitar espacios delante y detrás
+        String espacios = " palabra palabra ";
+        System.out.println("Tamaño de espacios: " + espacios.length());
+        String sinEspacios = espacios.trim();
+        System.out.println("Tamaño de sinEspacios: " + sinEspacios.length());
+
     }
 
 }
