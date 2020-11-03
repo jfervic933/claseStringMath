@@ -96,6 +96,20 @@ public class ClaseString {
         // endsWith devuelve true si el string termina con la secuencia de 
         // caracteres que se pasa como parámetro
         System.out.println("Termina ejemplo con plo? " + ejemplo.endsWith("plo"));
-    }
 
+        // Obtener un array de char de la cadena
+        // Declaración de una variable array de tipo char
+        char[] arrayChar;
+        arrayChar = s2.toCharArray();
+        // El atributo length existe en todos los arrays y 
+        // me indica su tamaño. Equivalente al método length()
+        // de los String
+        for (int i = 0; i < arrayChar.length; i++) {
+            // Para acceder a cada posición del array uso
+            // los corchetes
+            System.out.println("Posición i = " + i
+                    + " contenido = " + arrayChar[i]);
+        }
+
+    }
 }
